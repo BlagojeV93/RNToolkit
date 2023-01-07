@@ -1,26 +1,15 @@
 import React from 'react';
 import {
-  SafeAreaView,
-  useColorScheme
+  SafeAreaView
 } from 'react-native';
-
-import {
-  Colors
-} from 'react-native/Libraries/NewAppScreen';
 
 import ToolkitTS from './Projects/Toolkit&TS/App'
 import TodoApp from './Projects/ToDoApp/App'
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    flex: 1,
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
+    <SafeAreaView>
       <ToolkitTS />
     </SafeAreaView>
   );
